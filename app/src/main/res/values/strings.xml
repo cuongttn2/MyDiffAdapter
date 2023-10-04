@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">MyDiffAdapter</string>
+    <!--    string nation-->
+    <string name="flag_china" translatable="false">China</string>
+    <string name="flag_france" translatable="false">France</string>
+    <string name="flag_germany" translatable="false">Germany</string>
+    <string name="flag_russia" translatable="false">Russia</string>
+    <string name="flag_uk" translatable="false">United Kingdom</string>
+    <string name="flag_vietnam" translatable="false">Vietnam</string>
+    <!--    -->
+    <string name="select_language">Select Language</string>
+
+</resources>

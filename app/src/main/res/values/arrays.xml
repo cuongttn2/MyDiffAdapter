@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="array_flag">
+        <item>@drawable/flag_china</item>
+        <item>@drawable/flag_france</item>
+        <item>@drawable/flag_germany</item>
+        <item>@drawable/flag_russia</item>
+        <item>@drawable/flag_uk</item>
+        <item>@drawable/flag_vietnam</item>
+    </integer-array>
+
+    <string-array name="array_nation">
+        <item>@string/flag_china</item>
+        <item>@string/flag_france</item>
+        <item>@string/flag_germany</item>
+        <item>@string/flag_russia</item>
+        <item>@string/flag_uk</item>
+        <item>@string/flag_vietnam</item>
+    </string-array>
+
+    <string-array name="array_language_code">
+        <item>zh</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>re</item>
+        <item>en</item>
+        <item>vi</item>
+    </string-array>
+
+</resources>
