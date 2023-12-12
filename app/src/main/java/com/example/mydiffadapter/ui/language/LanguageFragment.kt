@@ -1,5 +1,6 @@
 package com.example.mydiffadapter.ui.language
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mydiffadapter.data.DataManager
 import com.example.mydiffadapter.databinding.FragmentLanguageBinding
 import com.example.mydiffadapter.model.NationUI
+import com.example.mydiffadapter.ui.main.activity.MainActivity
 import com.example.mydiffadapter.ui.main.adapter.NationAdapter
 import com.example.mydiffadapter.utils.Utils
 import dagger.hilt.android.AndroidEntryPoint
@@ -56,7 +58,13 @@ class LanguageFragment : Fragment() {
         listNation = Utils.getListNation(requireContext())
         setupRecyclerView()
         binding.btnBack.setOnClickListener {
-            requireActivity().finish()
+//            requireActivity().finish()
+            val newIntent = Intent(requireContext(), MainActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("LANGUAGE_FRG", "GO_TO_HOME_FRG")
+            newIntent.putExtras(bundle)
+            newIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(newIntent)
         }
     }
 

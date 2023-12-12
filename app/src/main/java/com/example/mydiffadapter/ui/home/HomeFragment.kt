@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import com.example.mydiffadapter.R
 import com.example.mydiffadapter.databinding.FragmentHomeBinding
 import com.example.mydiffadapter.ui.main.activity.MainActivity
-import com.example.mydiffadapter.ui.main.activity.MainActivity2
 import com.example.mydiffadapter.utils.extension.setUpLanguage
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -74,15 +73,11 @@ class HomeFragment : Fragment() {
             newIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(newIntent)
         }
-        binding.btnSelect2.setOnClickListener {
-            val intent = Intent(requireContext(), MainActivity2::class.java)
-            startActivity(intent)
-        }
     }
 
     override fun onResume() {
         super.onResume()
-        binding.btnSelect.text = requireContext().setUpLanguage().getString(R.string.select_language)
+//        binding.btnSelect.text = requireContext().setUpLanguage().getString(R.string.select_language)
 
     }
 

@@ -39,7 +39,7 @@ class MainActivity : BaseBindingActivity<ActivityMainBinding>() {
 
     override fun onResume() {
         super.onResume()
-        viewBinding.tvTest.text = this.setUpLanguage().getString(R.string.select_language)
+//        viewBinding.tvTest.text = this.setUpLanguage().getString(R.string.select_language)
         Log.d("CHECK_", "onResume: ${MainApplication.instance.dataManager.getNationCode()} ")
     }
 

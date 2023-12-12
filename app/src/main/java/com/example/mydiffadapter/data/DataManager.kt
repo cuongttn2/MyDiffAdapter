@@ -11,7 +11,7 @@ class DataManager @Inject constructor(private val preferences: SharedPreferences
     fun getNationCode(): String {
         var code: String? = preferences[NATION_CODE]
         if (!code.isNullOrEmpty()) return code
-        code = "en"
+        code = "vi"
         return code!!
     }
 
