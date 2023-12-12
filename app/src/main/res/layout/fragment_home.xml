@@ -11,6 +11,7 @@
         <Button
             android:id="@+id/btnSelect"
             android:layout_width="wrap_content"
+            android:textColor="@color/btn_select"
             android:layout_height="wrap_content"
             android:text="@string/select_language_alias"
             app:layout_constraintBottom_toBottomOf="parent"
