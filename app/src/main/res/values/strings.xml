@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" translatable="false">MyDiffAdapter</string>
     <!--    string nation-->
     <string name="flag_china" translatable="false">China</string>
@@ -9,7 +9,10 @@
     <string name="flag_vietnam" translatable="false">Vietnam</string>
     <!--    -->
     <string name="select_language">Select Language</string>
+    <!--    <string name="select_language">-->
+    <!--        <xliff:g>không dịch</xliff:g>-->
+    <!--        Select Language-->
+    <!--    </string>-->
     <string name="select_language_alias" translatable="false">@string/select_language</string>
-
 
 </resources>
